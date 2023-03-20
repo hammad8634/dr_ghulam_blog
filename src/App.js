@@ -1,13 +1,13 @@
 import "./App.css";
+import About from "./Components/about";
+import "./Components/navbar";
+import BlogPage from "./Components/navbar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <BlogPage />
+      <About />
     </div>
   );
 }
