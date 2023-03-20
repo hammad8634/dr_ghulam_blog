@@ -42,7 +42,11 @@ function Intro() {
             {iconData.map(({ text, icon }) => (
               <Row className="align-items-left mb-3" key={text}>
                 <div className="col">
-                  <img src={icon} alt={text} className="img-fluid" />
+                  <img
+                    src={icon}
+                    alt={text}
+                    className="img-fluid  icons_text "
+                  />
                 </div>{" "}
                 <div className="col-11 text-left">{text}</div>
               </Row>

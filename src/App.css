@@ -10,7 +10,7 @@
 }
 
 .img-fluid {
-  max-width: 120%;
+  max-width: 103%;
   height: auto;
 }
 .container-blue-text {
@@ -47,11 +47,8 @@ i {
   text-align: right;
 }
 
-.col-md-8 {
-  padding-right: 0rem;
-}
 .row {
-  margin: 9px;
+  margin: 1px;
 }
 
 .shifa-p {
@@ -60,5 +57,24 @@ i {
 }
 
 .about_img3 {
-  max-height: fit-content;
+  max-height: 70%;
+}
+
+.icons_text {
+  max-width: 180%;
+  height: auto;
+}
+
+.services_img {
+  max-width: 50%;
+  height: auto;
+}
+
+.services_container {
+  margin-top: -100px;
+}
+
+.quantity_text {
+  font-size: 25px;
+  font-family: "Roboto";
 }
