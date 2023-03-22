@@ -80,10 +80,14 @@ i {
   font-weight: bolder;
 }
 
-.visit-us-div {
-  width: 45%;
+.horizontal-line {
+  border: 2px solid #074adf;
+  margin-left: 10px;
+}
+.faq-data {
+  padding: 1px 0px 0px 0px;
 }
 
-.appointment-div {
-  width: 70%;
+.categories {
+  text-decoration: none;
 }

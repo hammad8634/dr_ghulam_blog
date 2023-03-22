@@ -1,9 +1,11 @@
 import "./App.css";
 import About from "./Components/about";
+import ContactUs from "./Components/contactus";
+import FAQ from "./Components/faqsection";
+import Footer from "./Components/footer";
 import "./Components/navbar";
 import BlogPage from "./Components/navbar";
 import Services from "./Components/services";
-import ContactUs from "./Components/contactus";
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
       <BlogPage />
       <About />
       <Services />
-      <ContactUs/>
+      <ContactUs />
+      <FAQ />
+      <Footer />
     </div>
   );
 }

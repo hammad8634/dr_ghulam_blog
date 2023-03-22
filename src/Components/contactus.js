@@ -25,32 +25,28 @@ const ContactUs = () => {
                   </a>
                 </Row>
 
-                <Row className="align-items-left mt-3">
-                  <div className="col-8 align-items-center">
-                    <br />
-                    <hr className="break-line" />
-                  </div>
-                  <div className="col-6 mt-2 visit-us-div">
+                <br />
+                <div className="mt-5  col-8 horizontal-line"></div>
+                <Row className="ml-5">
+                  <Col className="text-left mt-3">
                     <img
                       src={locationIcon}
                       className="img-fluid"
                       alt="location"
                     />
-                    <b className="ml-2 text-left">Visit Us</b>
-                  </div>{" "}
+                    <b className="ml-3">Visit Us</b>
+                  </Col>{" "}
                 </Row>
-                <Row className="align-items-left mt-1">
-                  <div className="col-8">
-                    <hr className="break-line " />
-                  </div>
-                  <div className="col-10 mt-3 appointment-div">
+                <div className="mt-3 col-8 horizontal-line"></div>
+                <Row className=" ml-5">
+                  <Col className="text-left mt-4">
                     <img
                       src={appointmentIcon}
                       className="img-fluid"
                       alt="appointment"
                     />
-                    <b className="ml-2 text-left">Make an appointment</b>
-                  </div>{" "}
+                    <b className="ml-4">Make an appointment</b>
+                  </Col>{" "}
                 </Row>
               </div>
             </Col>
