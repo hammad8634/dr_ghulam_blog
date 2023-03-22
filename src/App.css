@@ -9,7 +9,7 @@
   /* padding: 50px 0; */
 }
 
-.img-fluid {
+.intro-img {
   max-width: 103%;
   height: auto;
 }
@@ -56,8 +56,8 @@ i {
   padding: 1rem;
 }
 
-.about_img3 {
-  max-height: 70%;
+.right-col {
+  margin-left: 70px;
 }
 
 .icons_text {
@@ -66,15 +66,24 @@ i {
 }
 
 .services_img {
-  max-width: 50%;
+  max-width: 60%;
   height: auto;
-}
-
-.services_container {
-  margin-top: -100px;
 }
 
 .quantity_text {
   font-size: 25px;
   font-family: "Roboto";
+}
+
+.break-line {
+  border: 1.5px solid #074adf;
+  font-weight: bolder;
+}
+
+.visit-us-div {
+  width: 45%;
+}
+
+.appointment-div {
+  width: 70%;
 }

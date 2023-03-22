@@ -8,7 +8,8 @@ const Services = () => {
   return (
     <div>
       <>
-        <h1 className="services_container">Services</h1> <br/>
+        <br />
+        <h1 className="services_container">Services</h1> <br />
         <Container>
           <Row>
             <Col md={6} className="text-left">
@@ -45,7 +46,7 @@ const Services = () => {
           <div className="section-two">
             <Row>
               <Col md={6} className="text-left">
-                <div className="pb-5 pl-3 ">
+                <div className="pb-3 pl-3 ">
                   <h4>Advanced Laparoscopic Surgery</h4>
                   <p>
                     Apart from Weight Loss Surgery, his other areas of interest
@@ -55,7 +56,7 @@ const Services = () => {
                     Duct.
                   </p>
                 </div>
-                <div className="pb-5 pl-3">
+                <div className="pb-3 pl-3">
                   <h4>Laparoscopic Cholecystectomy</h4>
 
                   <p>
@@ -65,7 +66,7 @@ const Services = () => {
                     Common Bile Duct.
                   </p>
                 </div>
-                <div className="pb-5 pl-3">
+                <div className="pb-1 pl-3">
                   <h4>Laparoscopic Cholecyst 2</h4>
 
                   <p>

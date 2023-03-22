@@ -25,7 +25,7 @@ function Intro() {
             </h2>
           </Col>
           <Col md={7} className="text-md-right">
-            <img className="img-fluid " src={img1} alt="1" />
+            <img className="img-fluid intro-img" src={img1} alt="1" />
           </Col>
         </Row>
       </div>
