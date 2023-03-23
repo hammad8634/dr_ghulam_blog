@@ -23,7 +23,7 @@ const FAQ = () => {
       },
       {
         title: "What is the package version",
-        content: "v1.0.5",
+        content: "v1.0.5 and v.1.0.6",
       },
     ],
   };
