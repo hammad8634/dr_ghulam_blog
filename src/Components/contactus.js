@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "../App.css";
-import appointmentIcon from "./images/group.svg";
+import appointmentIcon from "./images/group_img.svg";
 import img4 from "./images/img4.png";
 import locationIcon from "./images/location.svg";
 import mapimg from "./images/map.png";

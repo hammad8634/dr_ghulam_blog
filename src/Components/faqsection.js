@@ -8,7 +8,7 @@ const FAQ = () => {
   const data = {
     rows: [
       {
-        title: "Lorem ipsum dolor sit amet,",
+        title: " Lorem ipsum dolor sit amet,",
         content: "Lorem ipsum dolor sit amet, consectetur ",
       },
       {
