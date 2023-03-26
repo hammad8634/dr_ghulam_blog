@@ -68,10 +68,15 @@ i {
 .services_img {
   max-width: 60%;
   height: auto;
+  padding: 13px 0px 30px 0px;
+}
+
+.quantity_values {
+  font-size: 30px;
 }
 
 .quantity_text {
-  font-size: 25px;
+  font-size: 26px;
   font-family: "Roboto";
 }
 
@@ -90,4 +95,39 @@ i {
 
 .categories {
   text-decoration: none;
+}
+.appointment-icon {
+  margin-left: 8px;
+}
+
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+  .services_img {
+    max-width: 90%;
+    padding: 27px 0px 25px 5px;
+  }
+
+  .contactus-text {
+    /* text-align: -webkit-center; */
+    margin-left: 0rem !important;
+  }
+
+  .horizontal-line {
+    margin-left: 15px;
+  }
+
+  .icons_text {
+    max-width: 500%;
+    padding: 0px 4px 0px 0px;
+  }
+
+  .about_img3 {
+    margin: 100px 0px 0px 0px;
+  }
+  .services-headings{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
 }

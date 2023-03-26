@@ -10,12 +10,12 @@ const About = () => {
     <div className="about">
       <h2 className="text-center">About</h2> <br />
       <Container>
-        <Row>
-          <Col className="col-md-4">
+        <Row className="about-row">
+          <Col className="col-md-4 about-img">
             <img src={img3} alt="About" className="img-fluid about_img3" />
           </Col>
           <Col className="col-md-7 right-col">
-            <h3>Conventional Surgeries</h3> <br />
+            <h3 className=" text-left">Conventional Surgeries</h3> <br />
             <p className=" text-left">
               Dr. Ghulam Siddiq has a vast experience of conventional operations
               including surgeries thyroid, breast, gastro-intestinal surgeries,

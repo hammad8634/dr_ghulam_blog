@@ -14,7 +14,7 @@ const Services = () => {
           <Row>
             <Col md={6} className="text-left">
               <div className="pb-5 pl-3">
-                <h4>Weight Loss Surgery</h4>
+                <h4 className="services-headings">Weight Loss Surgery</h4>
                 <p>
                   Dr. Ghulam Siddiq is among the pioneers of Laparoscopic and
                   Bariatric Surgery in Pakistan. He routinely performs
@@ -27,13 +27,13 @@ const Services = () => {
             </Col>
 
             <Col md={6}>
-              <div className="text-md-center text-danger">
-                <h4>803</h4>
+              <div className="text-md-center  text-danger">
+                <h4 className="quantity_values">803</h4>
                 <p className="quantity_text">Bariatric Surgery Procedures</p>
               </div>
               <br />
               <div className="text-md-center text-primary">
-                <h4>7765</h4>
+                <h4 className="quantity_values">7765</h4>
                 <p className="quantity_text">Laparoscopic Cholecystectomies </p>
               </div>
             </Col>
@@ -47,7 +47,9 @@ const Services = () => {
             <Row>
               <Col md={6} className="text-left">
                 <div className="pb-3 pl-3 ">
-                  <h4>Advanced Laparoscopic Surgery</h4>
+                  <h4 className="services-headings">
+                    Advanced Laparoscopic Surgery
+                  </h4>
                   <p>
                     Apart from Weight Loss Surgery, his other areas of interest
                     are Laparascopic Surgery for Haitus Hernia,
@@ -57,7 +59,9 @@ const Services = () => {
                   </p>
                 </div>
                 <div className="pb-3 pl-3">
-                  <h4>Laparoscopic Cholecystectomy</h4>
+                  <h4 className="services-headings">
+                    Laparoscopic Cholecystectomy
+                  </h4>
 
                   <p>
                     Out of my Laparoscopic work, the main bulk is that of
@@ -67,13 +71,14 @@ const Services = () => {
                   </p>
                 </div>
                 <div className="pb-1 pl-3">
-                  <h4>Laparoscopic Cholecyst 2</h4>
+                  <h4 className="services-headings">
+                    Laparoscopic Cholecyst 2
+                  </h4>
 
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse fringilla mauris non risus ullamcorper, non
-                    pulvinar ipsum semper. Nulla facilisi. Consectetur
-                    adipiscing elit.
+                    pulvinar ipsum semper. 
                   </p>
                 </div>
               </Col>

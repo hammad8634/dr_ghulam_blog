@@ -9,11 +9,13 @@ import mapimg from "./images/map.png";
 const ContactUs = () => {
   return (
     <div>
+      {" "}
+      <br />
       <h2 className="contactUs-heading">Contact</h2>
       <br />
       <div>
         <Container>
-          <Row>
+          <Row className="contactus-row">
             <Col md={6}>
               <img src={img4} className="img-fluid" alt="contactUs-img" />
             </Col>
@@ -26,8 +28,8 @@ const ContactUs = () => {
                 </Row>
 
                 <br />
-                <div className="mt-5  col-8 horizontal-line"></div>
-                <Row className="ml-5">
+                <div className="mt-5 col-md-10 col-lg-8  horizontal-line"></div>
+                <Row className="ml-5 contactus-text">
                   <Col className="text-left mt-3">
                     <img
                       src={locationIcon}
@@ -37,12 +39,12 @@ const ContactUs = () => {
                     <b className="ml-3">Visit Us</b>
                   </Col>{" "}
                 </Row>
-                <div className="mt-3 col-8 horizontal-line"></div>
-                <Row className=" ml-5">
+                <div className="mt-3 col-md-10 col-lg-8  horizontal-line"></div>
+                <Row className=" ml-5 contactus-text">
                   <Col className="text-left mt-4">
                     <img
                       src={appointmentIcon}
-                      className="img-fluid"
+                      className="img-fluid appointment-icon"
                       alt="appointment"
                     />
                     <b className="ml-4">Make an appointment</b>

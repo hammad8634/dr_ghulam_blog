@@ -36,9 +36,10 @@ const FAQ = () => {
 
   return (
     <>
+      {" "}
       <br />
-      <h2 className="faq-heading">Frequently Asked Questions</h2>
-
+      <br />
+      <h2 className="faq-heading">Frequently Asked Questions</h2> <br />
       <Container>
         <Col text-left>
           <div className="faq-data">

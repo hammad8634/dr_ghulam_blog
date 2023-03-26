@@ -7,14 +7,14 @@ import "./navbar.css";
 
 function Navbar() {
   const [dropdownAbout, setDropdownAbout] = useState(false);
-  const [dropdownServices, setDropdownServices] = useState(false);
+  const [dropdownContact, setDropdownContact] = useState(false);
 
   const toggleDropdownAbout = () => {
     setDropdownAbout(!dropdownAbout);
   };
 
-  const toggleDropdownServices = () => {
-    setDropdownServices(!dropdownServices);
+  const toggleDropdownContact = () => {
+    setDropdownContact(!dropdownContact);
   };
 
   return (
@@ -38,31 +38,31 @@ function Navbar() {
             />
             {dropdownAbout && (
               <div className="navbar-dropdown">
-                <a href="#" className="navbar-dropdown-link">
-                  About 1
+                <a href="#about" className="navbar-dropdown-link">
+                  About
                 </a>
                 <a href="#" className="navbar-dropdown-link">
-                  About 2
+                  Services
                 </a>
               </div>
             )}
           </div>
         </div>
         <div className="navbar-link-container">
-          <div className="navbar-link" onClick={toggleDropdownServices}>
-            Services
+          <div className="navbar-link" onClick={toggleDropdownContact}>
+            Contact
             <img
               src={dropdownIcon}
               alt="Dropdown Icon"
               className="navbar-dropdown-icon"
             />
-            {dropdownServices && (
+            {dropdownContact && (
               <div className="navbar-dropdown">
                 <a href="#" className="navbar-dropdown-link">
-                  Service 1
+                  Contact Us
                 </a>
                 <a href="#" className="navbar-dropdown-link">
-                  Service 2
+                  FAQ's
                 </a>
               </div>
             )}
