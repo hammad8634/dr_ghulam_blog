@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { default as React, useState } from "react";
-import divider from "./images/divider.svg";
 import dropdownIcon from "./images/dropdown.svg";
 import logo1 from "./images/logo.svg";
 import Intro from "./intro";
@@ -69,7 +68,6 @@ function Navbar() {
             )}
           </div>
         </div>
-        <img src={divider} alt="Divider" className="navbar-divider" />
         <a href="#" className="navbar-link blue-text-menu">
           Book Now
         </a>
