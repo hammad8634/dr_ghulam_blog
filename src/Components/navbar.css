@@ -13,7 +13,8 @@
 .navbar-left {
   display: flex;
   align-items: center;
-  margin-left: 16px;
+  /* margin-left: 16px; */
+  padding: 12px 0px 20px 15px;
 }
 
 .navbar-icon {
@@ -111,7 +112,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .container-left {
