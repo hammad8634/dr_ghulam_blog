@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import { default as Faq } from "react-faq-component";
@@ -35,11 +35,11 @@ const FAQ = () => {
   };
 
   return (
-    <>
+    <section id="faqs">
       {" "}
       <br />
       <br />
-      <h2 className="faq-heading">Frequently Asked Questions</h2> <br />
+      <h1 className="faq-heading">Frequently Asked Questions</h1> <br />
       <Container>
         <Col text-left>
           <div className="faq-data">
@@ -47,7 +47,7 @@ const FAQ = () => {
           </div>
         </Col>
       </Container>
-    </>
+    </section>
   );
 };
 

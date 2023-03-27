@@ -9,14 +9,14 @@ function BlogFooter() {
         <Row>
           <Col md={4}>
             <h5>About Us</h5>
-            <p>
+            <p className="text-left mt-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
               amet lacus eget sem malesuada pulvinar ut non ex.
             </p>
           </Col>
-          <Col md={4}>
+          <Col md={3}>
             <h5>Categories</h5>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled mt-3">
               <li>
                 <a href="/" className="categories">
                   Technology
@@ -34,12 +34,19 @@ function BlogFooter() {
               </li>
             </ul>
           </Col>
-          <Col md={4}>
+          <Col md={5}>
             <h5>Contact Us</h5>
-            <ul className="list-unstyled">
-              <li>Email: info@example.com</li>
-              <li>Phone: +1 (123) 456-7890</li>
-              <li>Address: 123 Main St, Anytown USA</li>
+            <ul className="list-unstyled text-center mt-3">
+              <li>
+                <b>Email:</b> info@shifa.com.pk
+              </li>
+              <li>
+                <b>Phone:</b> OPD +92-51-8464646
+              </li>
+              <li>
+                <b>Address:</b> Pitras Bukhari Road, Sector H-8/4, Islamabad -
+                Pakistan
+              </li>
             </ul>
           </Col>
         </Row>

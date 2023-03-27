@@ -17,13 +17,23 @@ function Navbar() {
     setDropdownContact(!dropdownContact);
   };
 
+  const handleScroll = (event) => {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <a href="#">
+        <a href="/">
           <img src={logo1} alt="Doctor Kit Icon" className="navbar-icon" />
         </a>
-        <a href="#" className="name_tag">
+        <a href="/" className="name_tag">
           <div className="navbar-title">Dr. Ghulam Siddiq</div>{" "}
         </a>
       </div>
@@ -38,10 +48,18 @@ function Navbar() {
             />
             {dropdownAbout && (
               <div className="navbar-dropdown">
-                <a href="#about" className="navbar-dropdown-link">
+                <a
+                  href="#about"
+                  className="navbar-dropdown-link"
+                  onClick={handleScroll}
+                >
                   About
                 </a>
-                <a href="#" className="navbar-dropdown-link">
+                <a
+                  href="#services"
+                  className="navbar-dropdown-link"
+                  onClick={handleScroll}
+                >
                   Services
                 </a>
               </div>
@@ -58,10 +76,18 @@ function Navbar() {
             />
             {dropdownContact && (
               <div className="navbar-dropdown">
-                <a href="#" className="navbar-dropdown-link">
+                <a
+                  href="#contact_us"
+                  className="navbar-dropdown-link"
+                  onClick={handleScroll}
+                >
                   Contact Us
                 </a>
-                <a href="#" className="navbar-dropdown-link">
+                <a
+                  href="#faqs"
+                  className="navbar-dropdown-link"
+                  onClick={handleScroll}
+                >
                   FAQ's
                 </a>
               </div>

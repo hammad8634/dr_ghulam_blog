@@ -5,6 +5,7 @@ import FAQ from "./Components/faqsection";
 import Footer from "./Components/footer";
 import "./Components/navbar";
 import BlogPage from "./Components/navbar";
+import ScrollToTopButton from "./Components/scrollScreenUp";
 import Services from "./Components/services";
 
 function App() {
@@ -13,9 +14,10 @@ function App() {
       <BlogPage />
       <About />
       <Services />
-      <ContactUs />
+      <ContactUs location="33.67555442868343, 73.06721081039363" />
       <FAQ />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }

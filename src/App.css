@@ -2,6 +2,24 @@
   text-align: center;
 }
 
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  padding: 5px 15px 3px 15px;
+  background-color: rgb(29, 115, 214);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+}
+.scroll-to-top-button:hover {
+  background-color: rgb(31, 121, 79);
+  color: white;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -100,8 +118,7 @@ i {
   margin-left: 8px;
 }
 
-
-/* Responsive CSS */
+/* Tablet Responsive CSS */
 @media screen and (max-width: 768px) {
   .services_img {
     max-width: 90%;
@@ -125,9 +142,13 @@ i {
   .about_img3 {
     margin: 100px 0px 0px 0px;
   }
-  .services-headings{
+  .services-headings {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 15px;
   }
+}
+
+/* Large Mobile Responsive CSS */
+@media screen and (max-width: 425px) {
 }

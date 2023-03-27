@@ -6,7 +6,7 @@ import img6 from "./images/img6.png";
 
 const Services = () => {
   return (
-    <div>
+    <section id="services">
       <>
         <br />
         <h1 className="services_container">Services</h1> <br />
@@ -78,7 +78,7 @@ const Services = () => {
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse fringilla mauris non risus ullamcorper, non
-                    pulvinar ipsum semper. 
+                    pulvinar ipsum semper.
                   </p>
                 </div>
               </Col>
@@ -103,7 +103,7 @@ const Services = () => {
           </div>
         </Container>
       </>
-    </div>
+    </section>
   );
 };
 

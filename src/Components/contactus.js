@@ -4,14 +4,18 @@ import "../App.css";
 import appointmentIcon from "./images/group_img.svg";
 import img4 from "./images/img4.png";
 import locationIcon from "./images/location.svg";
-import mapimg from "./images/map.png";
+import map_img from "./images/map.png";
 
-const ContactUs = () => {
+const ContactUs = ({ location }) => {
+  const handleClick = () => {
+    const mapUrl = `https://www.google.com/maps/search/?api=1&query=${location}`;
+    window.open(mapUrl, "_blank");
+  };
   return (
-    <div>
+    <section id="contact_us">
       {" "}
       <br />
-      <h2 className="contactUs-heading">Contact</h2>
+      <h1 className="contactUs-heading">Contact</h1>
       <br />
       <div>
         <Container>
@@ -22,8 +26,8 @@ const ContactUs = () => {
             <Col md={6}>
               <div>
                 <Row>
-                  <a href="/">
-                    <img src={mapimg} className="img-fluid" alt="map-img" />
+                  <a href="#contact_us" onClick={handleClick}>
+                    <img src={map_img} className="img-fluid" alt="map-img" />
                   </a>
                 </Row>
 
@@ -55,7 +59,7 @@ const ContactUs = () => {
           </Row>
         </Container>
       </div>
-    </div>
+    </section>
   );
 };
 
