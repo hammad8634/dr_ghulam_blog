@@ -8,7 +8,6 @@ import img3 from "./images/img3.png";
 const About = () => {
   return (
     <div className="about">
-      <br />
       <section id="about">
         <h1 className="text-center">About</h1> <br />
         <Container>

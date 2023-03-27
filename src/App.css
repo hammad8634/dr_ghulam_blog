@@ -78,7 +78,7 @@ i {
   margin-left: 70px;
 }
 
-.icons_text {
+.intro_icons {
   max-width: 180%;
   height: auto;
 }
@@ -124,7 +124,9 @@ i {
     max-width: 90%;
     padding: 27px 0px 25px 5px;
   }
-
+  .icons_text {
+    padding-left: 20px;
+  }
   .contactus-text {
     /* text-align: -webkit-center; */
     margin-left: 0rem !important;
@@ -134,8 +136,8 @@ i {
     margin-left: 15px;
   }
 
-  .icons_text {
-    max-width: 500%;
+  .intro_icons {
+    max-width: 700%;
     padding: 0px 4px 0px 0px;
   }
 

@@ -45,10 +45,10 @@ function Intro() {
                   <img
                     src={icon}
                     alt={text}
-                    className="img-fluid  icons_text "
+                    className="img-fluid  intro_icons "
                   />
                 </div>{" "}
-                <div className="col-11 text-left">{text}</div>
+                <div className="col-11 text-left icons_text">{text}</div>
               </Row>
             ))}
           </Col>
