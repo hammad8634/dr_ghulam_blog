@@ -32,7 +32,7 @@ const ContactUs = ({ location }) => {
                 </Row>
 
                 <br />
-                <div className="mt-5 col-md-10 col-lg-8  horizontal-line"></div>
+                <div className="mt-5 col-md-10 col-lg-11  horizontal-line"></div>
                 <Row className="ml-5 contactus-text">
                   <Col className="text-left mt-3">
                     <img
@@ -43,7 +43,7 @@ const ContactUs = ({ location }) => {
                     <b className="ml-3">Visit Us</b>
                   </Col>{" "}
                 </Row>
-                <div className="mt-3 col-md-10 col-lg-8  horizontal-line"></div>
+                <div className="mt-3 col-md-10 col-lg-11  horizontal-line"></div>
                 <Row className=" ml-5 contactus-text">
                   <Col className="text-left mt-4">
                     <img

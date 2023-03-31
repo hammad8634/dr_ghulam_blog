@@ -118,6 +118,22 @@ i {
   margin-left: 8px;
 }
 
+.primary-color-menu {
+  color: blue;
+}
+
+.primary-color-menu:hover {
+  color: white;
+  background-color: blue;
+}
+.menus {
+  color: black;
+  font-weight: 500;
+}
+.menus:hover {
+  background-color: #074adf;
+  color: white;
+}
 /* Tablet Responsive CSS */
 @media screen and (max-width: 768px) {
   .services_img {
@@ -153,4 +169,8 @@ i {
 
 /* Large Mobile Responsive CSS */
 @media screen and (max-width: 425px) {
+  .intro-img {
+    width: 100%;
+    height: auto;
+  }
 }

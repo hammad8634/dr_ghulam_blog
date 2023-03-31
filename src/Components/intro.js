@@ -20,7 +20,7 @@ function Intro() {
       <div className="main">
         <Row className="align-items-center bg-primary ">
           <Col md={5}>
-            <h2 className="text-white text-center text-md-center ">
+            <h2 className="text-white text-center text-md-center pt-5 pb-5 ">
               Pakistan's Leading Bariatric <br /> & <br /> Laparascopic Surgeon
             </h2>
           </Col>

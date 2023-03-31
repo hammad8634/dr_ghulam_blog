@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./Components/about";
+import CounterAnimation from "./Components/animationtext";
 import ContactUs from "./Components/contactus";
 import FAQ from "./Components/faqsection";
 import Footer from "./Components/footer";
@@ -8,11 +9,12 @@ import BlogPage from "./Components/navbar";
 import ScrollToTopButton from "./Components/scrollScreenUp";
 import Services from "./Components/services";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <BlogPage />
       <About />
+      {/* <CounterAnimation /> */}
       <Services />
       <ContactUs location="33.67555442868343, 73.06721081039363" />
       <FAQ />
@@ -20,6 +22,6 @@ function App() {
       <ScrollToTopButton />
     </div>
   );
-}
+};
 
 export default App;

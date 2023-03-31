@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   /* margin-left: 16px; */
-  padding: 12px 0px 20px 15px;
+  /* padding: 12px 0px 20px 15px; */
 }
 
 .navbar-icon {
@@ -57,14 +57,19 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+.navbar-menu {
+  text-decoration: none;
+}
 
-.name_tag {
+.name_tag,
+.navbar-menu {
   text-decoration: none;
   color: black;
 }
-.name_tag:hover {
+.name_tag:hover,
+.navbar-menu:hover {
   text-decoration: none;
-  color: rgb(122, 117, 117);
+  color: rgb(10, 40, 70);
 }
 .navbar-link-container:hover .navbar-dropdown {
   display: block;
@@ -142,9 +147,97 @@
   max-width: 100%;
   height: auto;
 }
+/* Updated css code*/
+.brand-name {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+.navigation-menu {
+  margin-left: auto;
+}
+.navigation {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0rem;
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+}
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #283b8b;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+.hamburger:hover {
+  background-color: #2642af;
+}
 
 /* Responsive CSS */
 @media screen and (max-width: 768px) {
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+
+  .navigation-menu ul {
+    /* previous styles */
+    display: none;
+  }
+
+  .navigation-menu ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: white;
+    border-top: 1px solid black;
+  }
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+  .navigation-menu li a {
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .navigation-menu li:hover {
+    background-color: #eee;
+  }
+  .hamburger {
+    display: block;
+    color: yellow;
+  }
+  /* 
   .navbar {
     flex-direction: row;
   }
@@ -171,5 +264,24 @@
   .right-col {
     flex: 2;
     margin-left: 5px;
+  } */
+}
+
+/* Large Mobile Responsive CSS */
+@media screen and (max-width: 425px) {
+  .navbar-left {
+    padding: 5px 0 5px 15px;
+    margin-left: 3px;
+  }
+  .navbar-link {
+    font-size: 14px;
+    margin-left: 20px;
+    padding: 1px 3px 3px 1px;
+  }
+  .navbar-dropdown-icon {
+    width: 13px;
+    height: 25px;
+    margin-left: 3px;
+    margin-right: 5px;
   }
 }
