@@ -1,6 +1,5 @@
 import "./App.css";
 import About from "./Components/about";
-import CounterAnimation from "./Components/animationtext";
 import ContactUs from "./Components/contactus";
 import FAQ from "./Components/faqsection";
 import Footer from "./Components/footer";
@@ -14,7 +13,6 @@ const App = () => {
     <div className="App">
       <BlogPage />
       <About />
-      {/* <CounterAnimation /> */}
       <Services />
       <ContactUs location="33.67555442868343, 73.06721081039363" />
       <FAQ />

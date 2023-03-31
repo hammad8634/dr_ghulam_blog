@@ -16,15 +16,15 @@ function Intro() {
     },
   ];
   return (
-    <Container fluid>
+    <Container fluid className="intro-container">
       <div className="main">
-        <Row className="align-items-center bg-primary ">
-          <Col md={5}>
+        <Row className="">
+          <Col md={5} className="bg-primary ">
             <h2 className="text-white text-center text-md-center pt-5 pb-5 ">
               Pakistan's Leading Bariatric <br /> & <br /> Laparascopic Surgeon
             </h2>
           </Col>
-          <Col md={7} className="text-md-right">
+          <Col md={7} className="">
             <img className="img-fluid intro-img" src={img1} alt="1" />
           </Col>
         </Row>

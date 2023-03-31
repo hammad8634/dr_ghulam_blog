@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import CountUp from "react-countup";
 import "../App.css";
 import img5 from "./images/img5.png";
 import img6 from "./images/img6.png";
@@ -15,7 +16,7 @@ const Services = () => {
             <Col md={6} className="text-left">
               <div className="pb-5 pl-3">
                 <h4 className="services-headings">Weight Loss Surgery</h4>
-                <p>
+                <p className="weight_loss_p">
                   Dr. Ghulam Siddiq is among the pioneers of Laparoscopic and
                   Bariatric Surgery in Pakistan. He routinely performs
                   Laparascopic Sleeve Gastrectomy, Roux-en-Y Gastric Bypass &
@@ -28,81 +29,79 @@ const Services = () => {
 
             <Col md={6}>
               <div className="text-md-center  text-danger">
-                <h4 className="quantity_values">803</h4>
+                <CountUp
+                  start={1}
+                  duration={2}
+                  // prefix="+"
+                  end={503}
+                  className="fs-2"
+                ></CountUp>{" "}
                 <p className="quantity_text">Bariatric Surgery Procedures</p>
               </div>
               <br />
               <div className="text-md-center text-primary">
-                <h4 className="quantity_values">7765</h4>
+                <h4 className="quantity_values">
+                  <CountUp
+                    start={1}
+                    duration={2}
+                    // prefix="+"
+                    end={7765}
+                    className="fs-2"
+                  ></CountUp>{" "}
+                </h4>
                 <p className="quantity_text">Laparoscopic Cholecystectomies </p>
               </div>
             </Col>
           </Row>
         </Container>
       </>
-
-      <>
-        <Container>
-          <div className="section-two">
-            <Row>
-              <Col md={6} className="text-left">
-                <div className="pb-3 pl-3 ">
-                  <h4 className="services-headings">
-                    Advanced Laparoscopic Surgery
-                  </h4>
-                  <p>
-                    Apart from Weight Loss Surgery, his other areas of interest
-                    are Laparascopic Surgery for Haitus Hernia,
-                    Gastro-intestinal cancer, Splenectomy, Adrenalectomy,
-                    Laparoscopic Repair of Hernias, Exploration of Common Bile
-                    Duct.
+      <div className="pb-5 pt-3">
+        <div className="pt-2 pb-5">
+          <Container>
+            <div className="row">
+              <div className="col-md-6">
+                <div className="pb-5 pl-3">
+                  <h3 className=" text-left">Conventional Surgeries</h3> <br />
+                  <p className=" text-left">
+                    Dr. Ghulam Siddiq has a vast experience of conventional
+                    operations including surgeries thyroid, breast,
+                    gastro-intestinal surgeries, pancreaticobilliary surgery
+                    including whipples operation, surgeries for different types
+                    of hernias and cancer surgeries of abdomenal organs, breast
+                    and thyroid gland.
                   </p>
                 </div>
-                <div className="pb-3 pl-3">
-                  <h4 className="services-headings">
-                    Laparoscopic Cholecystectomy
-                  </h4>
-
-                  <p>
-                    Out of my Laparoscopic work, the main bulk is that of
-                    Bariatric Surgery (weight loss surgery) and Laparoscopic
-                    Cholystectomies which include Laparoscopic Exploration of
-                    Common Bile Duct.
+              </div>
+              <div className="col-md-6">
+                <img src={img5} alt="About" className="img-fluid about_img3" />{" "}
+              </div>
+            </div>
+          </Container>
+        </div>
+        <div className="pt-3 pl-5">
+          <Container>
+            <div className="row ">
+              <div className="col-md-6 ">
+                <img src={img6} alt="About" className="img-fluid about_img3" />{" "}
+              </div>
+              <div className="col-md-6">
+                <div className="text">
+                  <h3 className=" text-left">Conventional Surgeries 0</h3>{" "}
+                  <br />
+                  <p className=" text-left">
+                    Dr. Ghulam Siddiq has a vast experience of conventional
+                    operations including surgeries thyroid, breast,
+                    gastro-intestinal surgeries, pancreaticobilliary surgery
+                    including whipples operation, surgeries for different types
+                    of hernias and cancer surgeries of abdomenal organs, breast
+                    and thyroid gland.
                   </p>
                 </div>
-                <div className="pb-1 pl-3">
-                  <h4 className="services-headings">
-                    Laparoscopic Cholecyst 2
-                  </h4>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse fringilla mauris non risus ullamcorper, non
-                    pulvinar ipsum semper.
-                  </p>
-                </div>
-              </Col>
-              <Col md={6}>
-                <div>
-                  <img
-                    src={img5}
-                    alt="Image1"
-                    className="img-fluid services_img mt-1"
-                  />
-                </div>
-                <br />
-                <div>
-                  <img
-                    src={img6}
-                    alt="Image2"
-                    className="img-fluid services_img"
-                  />
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </Container>
-      </>
+              </div>
+            </div>
+          </Container>
+        </div>
+      </div>
     </section>
   );
 };
