@@ -25,14 +25,7 @@ const ContactUs = ({ location }) => {
             </Col>
             <Col md={6}>
               <div>
-                <Row>
-                  <a href="#contact_us" onClick={handleClick}>
-                    <img src={map_img} className="img-fluid" alt="map-img" />
-                  </a>
-                </Row>
-
-                <br />
-                <div className="mt-5 col-md-10 col-lg-11  horizontal-line"></div>
+                <div className="mt-3 col-md-10 col-lg-11  horizontal-line"></div>
                 <Row className="ml-5 contactus-text">
                   <Col className="text-left mt-3">
                     <img
@@ -53,6 +46,13 @@ const ContactUs = ({ location }) => {
                     />
                     <b className="ml-4">Make an appointment</b>
                   </Col>{" "}
+                </Row>{" "}
+                <div className="mt-3 col-md-10 col-lg-11  horizontal-line"></div>
+                <Row>
+                  <a href="#contact_us" onClick={handleClick}>
+                    <br />
+                    <img src={map_img} className="img-fluid" alt="map-img" />
+                  </a>
                 </Row>
               </div>
             </Col>

@@ -198,12 +198,6 @@ div.col-md-5 {
   padding: 4px 1px;
 }
 
-/* .awards-icon-container:hover  {
-  color: #1432db;
-  background-color: white;
-  padding: 2px 5px;
-} */
-
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -256,6 +250,9 @@ div.bg-primary {
   /* background-color: rgb(241, 237, 245); */
 }
 
+p {
+  font-size: 16px;
+}
 @media screen and (max-width: 1024px) {
   div.bg-primary {
     padding: 47px 1px;
@@ -340,5 +337,4 @@ div.bg-primary {
     font-size: 21px;
     font-family: "Roboto";
   }
-  
 }
