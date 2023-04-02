@@ -15,15 +15,15 @@ const About = () => {
         <br />
         <Container>
           <div className="row">
-            <div className="col-md-5">
-              <img src={img3} alt="About" className="img-fluid about_img3" />{" "}
+            <div className="col-md-5 about-main-img">
+              <img src={img3} alt="About" className="img-fluid about_img3 " />{" "}
             </div>
             <div className="col-md-7">
               <div className="text">
                 <h3 className=" about-heading">Conventional Surgeries</h3>{" "}
                 <br />
-                <div className="about-para">
-                  <p className=" text-left">
+                <div className="about-para ">
+                  <p className=" text-left ">
                     Dr. Ghulam Siddiq has a vast experience of conventional
                     operations including surgeries thyroid, breast,
                     gastro-intestinal surgeries, pancreaticobilliary surgery
@@ -37,9 +37,7 @@ const About = () => {
                     gastro-intestinal surgeries, pancreaticobilliary surgery
                     including whipples operation, surgeries for different types
                     of hernias and cancer surgeries of abdomenal organs, breast
-                    and thyroid gland. abdomenal organs, breast and thyroid
-                    gland. abdomenal organs, breast and thyroid gland. abdomenal
-                    organs, breast and thyroid gland.
+                    and thyroid gland.
                   </p>
                 </div>
               </div>

@@ -13,11 +13,11 @@ const Services = () => {
   return (
     <section id="services">
       <>
-        <br /> <br />
+        <br />
         <h1 className="services_container">Services</h1> <br />
       </>
-      <div className="pb-5 pt-3">
-        <div className="pt-2 pb-3">
+      <div className="">
+        <div className="pt-2 pb-0">
           <Container>
             <div className="row">
               <div className="col-md-6">
@@ -57,7 +57,7 @@ const Services = () => {
                 <img src={img6} alt="About" className="img-fluid about_img3" />{" "}
               </div>
               <div className="col-md-6">
-                <div className="text">
+                <div className="service-heading-2">
                   <h3 className=" text-left">Conventional Surgeries </h3> <br />
                   <p className=" text-left">
                     Dr. Ghulam Siddiq has a vast experience of conventional

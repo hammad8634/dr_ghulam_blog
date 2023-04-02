@@ -35,7 +35,7 @@ const ContactUs = ({ location }) => {
                 <div className="mt-5 col-md-10 col-lg-11  horizontal-line"></div>
                 <Row className="ml-5 contactus-text">
                   <Col className="text-left mt-3">
-                    <wimg
+                    <img
                       src={locationIcon}
                       className="img-fluid"
                       alt="location"

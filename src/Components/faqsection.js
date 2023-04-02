@@ -66,7 +66,7 @@ const FAQ = () => {
               expanded={selectedQuestion === faq.question}
             >
               <div
-                className="faq-question"
+                className="faq-question text-left"
                 onClick={() => handleQuestionClick(faq.question)}
               >
                 <AccordionSummary
