@@ -1,7 +1,7 @@
 import "./App.css";
 import About from "./Components/about";
 import ContactUs from "./Components/contactus";
-import FAQ from "./Components/faqsection";
+import Faq from "./Components/faqsection";
 import Footer from "./Components/footer";
 import "./Components/navbar";
 import BlogPage from "./Components/navbar";
@@ -15,7 +15,7 @@ const App = () => {
       <About />
       <Services />
       <ContactUs location="33.67555442868343, 73.06721081039363" />
-      <FAQ />
+      <Faq />
       <Footer />
       <ScrollToTopButton />
     </div>

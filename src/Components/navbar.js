@@ -26,32 +26,26 @@ function Navigation() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav className="">
-            <Nav.Link href="/" className="menus shadow-sm mb-3 mt-2 ">
-              Home
-            </Nav.Link>
-            <Nav.Link href="#about" className="menus shadow-sm mb-3 mt-2">
+            <Nav.Link href="#about" className="menus shadow-sm mb-1 mt-1">
               About
             </Nav.Link>
-            <Nav.Link href="#services" className="menus shadow-sm mb-3 mt-2">
+            <Nav.Link href="#services" className="menus shadow-sm mb-1 mt-1">
               Services
             </Nav.Link>
-            <Nav.Link href="#contact_us" className="menus shadow-sm mb-3 mt-2">
+            <Nav.Link href="#contact_us" className="menus shadow-sm mb-1 mt-1">
               Contact Us
             </Nav.Link>{" "}
-            <Nav.Link href="#faqs" className="menus shadow-sm mb-3 mt-2 ">
-              FAQs
-            </Nav.Link>
           </Nav>
           <Nav className=" p-2 fw-bold">
             <Nav.Link
               href="#"
-              className="primary-color-menu shadow-sm mb-3 mt-2"
+              className="primary-color-menu shadow-sm mb-1 mt-1"
             >
               Book Now
             </Nav.Link>
             <Nav.Link
               href="#"
-              className="primary-color-menu shadow-sm  mb-3 mt-2 "
+              className="primary-color-menu shadow-sm  mb-1 mt-1 "
             >
               My Appointment
             </Nav.Link>

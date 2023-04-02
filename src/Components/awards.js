@@ -1,14 +1,16 @@
 import { faAward, faStar, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { Row } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
 import "../App.css";
 
 const Awards = () => {
   const awardData = [
-    { text: "32 years of Laparoscopic Experience", icon: faTrophy },
-    { text: "Shifa International Award", icon: faAward },
+    { text: "32 years of Laparoscopic Experience", icon: faAward },
+    { text: "Shifa International Award", icon: faTrophy },
     {
-      text: "Recognized for services by the President of Pakistan",
+      text: "Recognized  by the President of Pakistan",
       icon: faStar,
     },
   ];
@@ -16,12 +18,15 @@ const Awards = () => {
   return (
     <div className="awards-container">
       {awardData.map(({ text, icon }) => (
-        <div className="awards-icon-container" key={text}>
-          <div className="icon-container">
+        <Row className="awards-icon-container " key={text}>
+          <Col sm={4} className="icon-container">
             <FontAwesomeIcon icon={icon} className="icon" />
-          </div>
-          <h3 className="award-name">{text}</h3><br/>
-        </div>
+          </Col>
+          <Col>
+            {" "}
+            <h3 className="award-name text-left">{text}</h3>
+          </Col>
+        </Row>
       ))}
     </div>
   );

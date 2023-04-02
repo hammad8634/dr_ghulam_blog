@@ -9,7 +9,10 @@ const About = () => {
   return (
     <div className="about">
       <section id="about">
+        {" "}
+        <br /> <br />
         <h1 className="text-center">About</h1> <br />
+        <br />
         <Container>
           <div className="row">
             <div className="col-md-5">

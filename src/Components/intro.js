@@ -23,13 +23,18 @@ function Intro() {
         </Row>
       </div>
 
-      <div className="py-5">
+      <div className="py-5 intro-container-2">
         <Row className="align-items-center">
-          <Col md={6}>
-            <h2 className="text-center text-md-center mb-0">
-              Professor & Chief of Surgery{" "}
-            </h2>
-            <p className="shifa-p"> Shifa International Hospital, Islamabad</p>
+          <Col md={6} className="intro-text">
+            <div className="text-container-intro">
+              <h2 className="text-center text-md-center mb-0">
+                Professor & Chief of Surgery{" "}
+              </h2>
+              <p className="shifa-p">
+                {" "}
+                Shifa International Hospital, Islamabad
+              </p>
+            </div>
           </Col>
           <Col>
             {" "}

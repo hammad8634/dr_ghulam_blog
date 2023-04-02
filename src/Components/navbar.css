@@ -1,7 +1,5 @@
 /* Navbar CSS */
 
-
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -57,7 +55,7 @@
   /* left: 0; */
   background-color: #f1f1f1;
   min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 1px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 .navbar-menu {
@@ -81,7 +79,7 @@
 .navbar-dropdown-link {
   color: #202020;
   font-size: 18px;
-  padding: 12px 16px;
+  padding: 12px 12px;
   text-decoration: none;
   display: block;
   font-weight: 400;
@@ -239,6 +237,9 @@
   .hamburger {
     display: block;
     color: yellow;
+  }
+  div.bg-primary {
+    padding: 17px 0px;
   }
   /* 
   .navbar {

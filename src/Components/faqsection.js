@@ -1,53 +1,60 @@
-import React from "react";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import { default as Faq } from "react-faq-component";
-import "../App.css";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: '100%',
+  },
+  heading: {
+    fontWeight: theme.typography.fontWeightRegular,
+  },
+}));
+
+const faqs = [
+  {
+    question: 'What is React?',
+    answer:
+      'React is a popular JavaScript library for building user interfaces. It was developed by Facebook and is now widely used in web development.',
+  },
+  {
+    question: 'What are the advantages of using React?',
+    answer:
+      'React offers several advantages, including easy reusability of code, efficient rendering with its virtual DOM, and a large and supportive community of developers.',
+  },
+  {
+    question: 'How do I get started with React?',
+    answer:
+      'To get started with React, you can follow the official documentation and tutorials available on the React website. You will need to have a basic understanding of HTML, CSS, and JavaScript to get started.',
+  },
+];
 
 const FAQ = () => {
-  const data = {
-    rows: [
-      {
-        title: " Lorem ipsum dolor sit amet,",
-        content: "Lorem ipsum dolor sit amet, consectetur ",
-      },
-      {
-        title: "Nunc maximus, magna at ultricies elementum",
-        content:
-          "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.",
-      },
-      {
-        title: "Curabitur laoreet, mauris vel blandit fringilla",
-        content:
-          "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
-      },
-      {
-        title: "What is the package version",
-        content: "v1.0.5 and v.1.0.6",
-      },
-    ],
-  };
-  const styles = {
-    bgColor: "#FFFBFF",
-    rowTitleColor: "black",
-    transitionDuration: "0.4s",
-    rowContentPaddingBottom: "20px",
-  };
+  const classes = useStyles();
 
   return (
-    <section id="faqs">
-      {" "}
-      <br />
-      <br />
-      <h1 className="faq-heading">Frequently Asked Questions</h1> <br />
-      <Container>
-        <Col text-left>
-          <div className="faq-data">
-            <Faq data={data} styles={styles} />{" "}
-          </div>
-        </Col>
-      </Container>
-    </section>
+    <div className={classes.root}>
+      {faqs.map((faq) => (
+        <Accordion key={faq.question}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls={faq.question}
+            id={faq.question}
+          >
+            <Typography className={classes.heading}>
+              {faq.question}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>{faq.answer}</Typography>
+          </AccordionDetails>
+        </Accordion>
+      ))}
+    </div>
   );
 };
 

@@ -49,7 +49,7 @@ const Services = () => {
                   <h4 className="quantity_values">
                     <CountUp
                       start={0}
-                      duration={3}
+                      duration={2}
                       end={7765}
                       className="fs-2"
                     ></CountUp>{" "}
