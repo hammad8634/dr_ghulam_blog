@@ -1,11 +1,15 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 import "../App.css";
 import img5 from "./images/img5.png";
 import img6 from "./images/img6.png";
 
 const Services = () => {
+  const { ref: ref1, inView: inView1 } = useInView({ threshold: 0.2 });
+  const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.2 });
+
   return (
     <section id="services">
       <>
@@ -28,28 +32,30 @@ const Services = () => {
             </Col>
 
             <Col md={6}>
-              <div className="text-md-center  text-danger">
-                <CountUp
-                  start={1}
-                  duration={2}
-                  // prefix="+"
-                  end={503}
-                  className="fs-2"
-                ></CountUp>{" "}
+              <div className="text-md-center text-danger" ref={ref1}>
+                {inView1 && (
+                  <CountUp
+                    start={0}
+                    duration={3}
+                    end={503}
+                    className="fs-2"
+                  ></CountUp>
+                )}
                 <p className="quantity_text">Bariatric Surgery Procedures</p>
               </div>
               <br />
-              <div className="text-md-center text-primary">
-                <h4 className="quantity_values">
-                  <CountUp
-                    start={1}
-                    duration={2}
-                    // prefix="+"
-                    end={7765}
-                    className="fs-2"
-                  ></CountUp>{" "}
-                </h4>
-                <p className="quantity_text">Laparoscopic Cholecystectomies </p>
+              <div className="text-md-center text-primary" ref={ref2}>
+                {inView2 && (
+                  <h4 className="quantity_values">
+                    <CountUp
+                      start={0}
+                      duration={3}
+                      end={7765}
+                      className="fs-2"
+                    ></CountUp>{" "}
+                  </h4>
+                )}
+                <p className="quantity_text">Laparoscopic Cholecystectomies</p>
               </div>
             </Col>
           </Row>
