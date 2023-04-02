@@ -47,7 +47,6 @@ const ContactUs = ({ location }) => {
                     <b className="ml-4">Make an appointment</b>
                   </Col>{" "}
                 </Row>{" "}
-                <div className="mt-3 col-md-10 col-lg-11  horizontal-line"></div>
                 <Row>
                   <a href="#contact_us" onClick={handleClick}>
                     <br />
