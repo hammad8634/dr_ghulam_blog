@@ -153,10 +153,6 @@ div.col-md-5 {
   padding: 0px 0px;
 }
 
-.weight_loss_p {
-  /* text-align: justify; */
-}
-
 /*Awards section css code*/
 
 .awards-container {
@@ -202,11 +198,11 @@ div.col-md-5 {
   padding: 4px 1px;
 }
 
-.awards-icon-container:hover .award-name {
+/* .awards-icon-container:hover  {
   color: #1432db;
   background-color: white;
   padding: 2px 5px;
-}
+} */
 
 @keyframes pulse {
   0% {
@@ -248,6 +244,16 @@ div.bg-primary {
 .text-container-intro {
   /* margin-top: -150px; */
   color: black;
+}
+
+.faq-question {
+  font-weight: 800;
+  background-color: rgb(241, 237, 245);
+}
+
+.faq-answer {
+  font-weight: 800;
+  /* background-color: rgb(241, 237, 245); */
 }
 
 @media screen and (max-width: 1024px) {

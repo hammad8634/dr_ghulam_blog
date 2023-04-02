@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import "../App.css";
@@ -13,68 +13,23 @@ const Services = () => {
   return (
     <section id="services">
       <>
-        <br />
+        <br /> <br />
         <h1 className="services_container">Services</h1> <br />
-        <Container>
-          <Row>
-            <Col md={6} className="text-left">
-              <div className="pb-5 pl-3">
-                <h4 className="services-headings">Weight Loss Surgery</h4>
-                <p className="weight_loss_p">
-                  Dr. Ghulam Siddiq is among the pioneers of Laparoscopic and
-                  Bariatric Surgery in Pakistan. He routinely performs
-                  Laparascopic Sleeve Gastrectomy, Roux-en-Y Gastric Bypass &
-                  mini Gastric Bypass/OAGB. He is a master trainer conducting
-                  workshops on Bariatric Surgery throughout Pakistan for the
-                  last 8 years.
-                </p>
-              </div>
-            </Col>
-
-            <Col md={6}>
-              <div className="text-md-center text-danger" ref={ref1}>
-                {inView1 && (
-                  <CountUp
-                    start={0}
-                    duration={3}
-                    end={503}
-                    className="fs-2"
-                  ></CountUp>
-                )}
-                <p className="quantity_text">Bariatric Surgery Procedures</p>
-              </div>
-              <br />
-              <div className="text-md-center text-primary" ref={ref2}>
-                {inView2 && (
-                  <h4 className="quantity_values">
-                    <CountUp
-                      start={0}
-                      duration={2}
-                      end={7765}
-                      className="fs-2"
-                    ></CountUp>{" "}
-                  </h4>
-                )}
-                <p className="quantity_text">Laparoscopic Cholecystectomies</p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
       </>
       <div className="pb-5 pt-3">
-        <div className="pt-2 pb-5">
+        <div className="pt-2 pb-3">
           <Container>
             <div className="row">
               <div className="col-md-6">
                 <div className="pb-5 pl-3">
-                  <h3 className=" text-left">Conventional Surgeries</h3> <br />
-                  <p className=" text-left">
-                    Dr. Ghulam Siddiq has a vast experience of conventional
-                    operations including surgeries thyroid, breast,
-                    gastro-intestinal surgeries, pancreaticobilliary surgery
-                    including whipples operation, surgeries for different types
-                    of hernias and cancer surgeries of abdomenal organs, breast
-                    and thyroid gland.
+                  <h4 className="services-headings">Weight Loss Surgery</h4>
+                  <p className="weight_loss_p text-left">
+                    Dr. Ghulam Siddiq is among the pioneers of Laparoscopic and
+                    Bariatric Surgery in Pakistan. He routinely performs
+                    Laparascopic Sleeve Gastrectomy, Roux-en-Y Gastric Bypass &
+                    mini Gastric Bypass/OAGB. He is a master trainer conducting
+                    workshops on Bariatric Surgery throughout Pakistan for the
+                    last 8 years.
                   </p>
                 </div>
               </div>
@@ -83,6 +38,17 @@ const Services = () => {
               </div>
             </div>
           </Container>
+        </div>{" "}
+        <div className="text-md-center text-danger" ref={ref1}>
+          {inView1 && (
+            <CountUp
+              start={0}
+              duration={3}
+              end={503}
+              className="fs-2 "
+            ></CountUp>
+          )}
+          <p className="quantity_text">Bariatric Surgery Procedures</p>
         </div>
         <div className="pt-3 pl-5">
           <Container>
@@ -92,8 +58,7 @@ const Services = () => {
               </div>
               <div className="col-md-6">
                 <div className="text">
-                  <h3 className=" text-left">Conventional Surgeries 0</h3>{" "}
-                  <br />
+                  <h3 className=" text-left">Conventional Surgeries </h3> <br />
                   <p className=" text-left">
                     Dr. Ghulam Siddiq has a vast experience of conventional
                     operations including surgeries thyroid, breast,
@@ -106,6 +71,19 @@ const Services = () => {
               </div>
             </div>
           </Container>
+        </div>{" "}
+        <div className="text-md-center text-primary pt-5" ref={ref2}>
+          {inView2 && (
+            <h4 className="quantity_values">
+              <CountUp
+                start={0}
+                duration={2}
+                end={7765}
+                className="fs-2"
+              ></CountUp>{" "}
+            </h4>
+          )}
+          <p className="quantity_text">Laparoscopic Cholecystectomies</p>
         </div>
       </div>
     </section>
