@@ -3,22 +3,15 @@ import { Row } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import "../App.css";
+import Awards from "./awards";
 import img1 from "./images/img1.jpg";
-import milIcon from "./images/mil_icon.svg";
 
 function Intro() {
-  const iconData = [
-    { text: "32 years of Laparoscopic Experience", icon: milIcon },
-    { text: "Shifa International Award", icon: milIcon },
-    {
-      text: "Recognized for services by the President of Pakistan",
-      icon: milIcon,
-    },
-  ];
+  // eslint-disable-next-line no-unused-vars
   return (
-    <Container fluid className="intro-container">
-      <div className="main">
-        <Row className="">
+    <Container fluid className="intro-main-container">
+      <div className="intro-container">
+        <Row>
           <Col md={5} className="bg-primary ">
             <h2 className="text-white text-center text-md-center pt-5 pb-5 ">
               Pakistan's Leading Bariatric <br /> & <br /> Laparascopic Surgeon
@@ -38,20 +31,10 @@ function Intro() {
             </h2>
             <p className="shifa-p"> Shifa International Hospital, Islamabad</p>
           </Col>
-          <Col className="text-md-left">
-            {iconData.map(({ text, icon }) => (
-              <Row className="align-items-left mb-3" key={text}>
-                <div className="col">
-                  <img
-                    src={icon}
-                    alt={text}
-                    className="img-fluid  intro_icons "
-                  />
-                </div>{" "}
-                <div className="col-11 text-left icons_text">{text}</div>
-              </Row>
-            ))}
-          </Col>
+          <Col>
+            {" "}
+            <Awards />
+          </Col>{" "}
         </Row>
       </div>
     </Container>
