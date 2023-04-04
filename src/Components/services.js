@@ -34,7 +34,11 @@ const Services = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <img src={img5} alt="About" className="img-fluid about_img3" />{" "}
+                <img
+                  src={img5}
+                  alt="About"
+                  className="img-fluid services_img3"
+                />{" "}
               </div>
             </div>
           </Container>
@@ -54,7 +58,11 @@ const Services = () => {
           <Container>
             <div className="row ">
               <div className="col-md-6 ">
-                <img src={img6} alt="About" className="img-fluid about_img3" />{" "}
+                <img
+                  src={img6}
+                  alt="About"
+                  className="img-fluid services_img3"
+                />{" "}
               </div>
               <div className="col-md-6">
                 <div className="service-heading-2">

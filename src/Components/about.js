@@ -20,6 +20,8 @@ const About = () => {
             </div>
             <div className="col-md-7">
               <div className="text">
+                {" "}
+                <br />
                 <h3 className=" about-heading">Conventional Surgeries</h3>{" "}
                 <br />
                 <div className="about-para ">
