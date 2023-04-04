@@ -21,9 +21,9 @@ const Services = () => {
           <Container>
             <div className="row">
               <div className="col-md-6">
-                <div className="pb-5 pl-3">
+                <div className="pb-2 pl-3">
                   <h4 className="services-headings">Weight Loss Surgery</h4>
-                  <p className="weight_loss_p text-left">
+                  <p className="weight_loss_p text-left ">
                     Dr. Ghulam Siddiq is among the pioneers of Laparoscopic and
                     Bariatric Surgery in Pakistan. He routinely performs
                     Laparascopic Sleeve Gastrectomy, Roux-en-Y Gastric Bypass &
@@ -37,13 +37,13 @@ const Services = () => {
                 <img
                   src={img5}
                   alt="About"
-                  className="img-fluid services_img3"
+                  className="img-fluid services_img3 pt-3"
                 />{" "}
               </div>
             </div>
           </Container>
         </div>{" "}
-        <div className="text-md-center text-danger" ref={ref1}>
+        <div className="text-md-center text-danger mt-4" ref={ref1}>
           {inView1 && (
             <CountUp
               start={0}
@@ -54,19 +54,19 @@ const Services = () => {
           )}
           <p className="quantity_text">Bariatric Surgery Procedures</p>
         </div>
-        <div className="pt-3 pl-5">
-          <Container>
+        <div className="pt-3 ">
+          <Container className="mt-2">
             <div className="row ">
               <div className="col-md-6 ">
                 <img
                   src={img6}
                   alt="About"
-                  className="img-fluid services_img3"
+                  className="img-fluid services_img3 pt-4"
                 />{" "}
-              </div>
+              </div>{" "}
               <div className="col-md-6">
                 <div className="service-heading-2">
-                  <h3 className=" text-left">Conventional Surgeries </h3> <br />
+                  <h3 className=" text-left">Conventional Surgeries 2</h3> <br />
                   <p className=" text-left">
                     Dr. Ghulam Siddiq has a vast experience of conventional
                     operations including surgeries thyroid, breast,
@@ -80,7 +80,7 @@ const Services = () => {
             </div>
           </Container>
         </div>{" "}
-        <div className="text-md-center text-primary pt-5" ref={ref2}>
+        <div className="text-md-center text-primary pt-4" ref={ref2}>
           {inView2 && (
             <h4 className="quantity_values">
               <CountUp

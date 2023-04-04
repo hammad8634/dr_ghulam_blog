@@ -12,7 +12,6 @@ const About = () => {
         {" "}
         <br /> <br />
         <h1 className="text-center">About</h1> <br />
-        <br />
         <Container>
           <div className="row">
             <div className="col-md-5 about-main-img">
@@ -22,7 +21,7 @@ const About = () => {
               <div className="text">
                 {" "}
                 <br />
-                <h3 className=" about-heading">Conventional Surgeries</h3>{" "}
+                <h3 className="about-heading ml-2 ">Conventional Surgeries</h3>{" "}
                 <br />
                 <div className="about-para ">
                   <p className=" text-left ">

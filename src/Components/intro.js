@@ -17,7 +17,7 @@ function Intro() {
               Pakistan's Leading Bariatric <br /> & <br /> Laparascopic Surgeon
             </h2>
           </Col>
-          <Col md={7} className="">
+          <Col md={7} className="intro-img-div-container">
             <img className="img-fluid intro-img" src={img1} alt="1" />
           </Col>
         </Row>
