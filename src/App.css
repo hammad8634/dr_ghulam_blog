@@ -181,7 +181,7 @@ div.col-md-5 {
   background-color: #1b29e6;
   margin-right: 10px;
   animation: pulse 2s infinite;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   margin-left: 20px;
 }
 
@@ -401,6 +401,10 @@ p {
     align-items: center; /* centers the text vertically */
     height: 100vh;
   }
+
+  .MuiTypography-h5 {
+    font-size: 1.2rem !important;
+  }
 }
 
 /* Large Mobile Responsive CSS */
@@ -437,5 +441,8 @@ p {
   }
   p {
     font-size: 16px;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.1rem !important;
   }
 }
