@@ -35,6 +35,7 @@
   max-width: 100%;
   height: auto;
 }
+
 .container-blue-text {
   color: white;
   font-weight: bold;
@@ -86,12 +87,6 @@ i {
   max-width: 180%;
   height: auto;
 }
-
-/* .services_img {
-  max-width: 60%;
-  height: auto;
-  padding: 13px 0px 30px 0px;
-} */
 
 .quantity_values {
   font-size: 30px;
@@ -169,6 +164,11 @@ div.col-md-5 {
   align-items: center;
   margin-right: 30px;
   margin-bottom: 30px;
+  border-radius: 50px;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+  padding: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .icon-container {
@@ -179,8 +179,10 @@ div.col-md-5 {
   height: 50px;
   border-radius: 50%;
   background-color: #1b29e6;
-  margin-right: 20px;
+  margin-right: 10px;
   animation: pulse 2s infinite;
+  border: 2px solid #fff;
+  margin-left: 20px;
 }
 
 .icon {
@@ -195,8 +197,24 @@ div.col-md-5 {
   font-weight: 700;
   margin: 0px 0px 0px 0px;
   transition: all 0.2s ease-in-out;
-  /* border: 2px solid green; */
   padding: 4px 1px;
+}
+
+.awards-icon-container1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("award-bg-only.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: -1;
+  border-radius: 30px;
 }
 
 @keyframes pulse {
@@ -258,30 +276,35 @@ p {
   display: flex;
   justify-content: center; /* centers the text horizontally */
   align-items: center; /* centers the text vertically */
-  height: 100vh;
+  height: 70vh;
+}
+
+.text-before-award,
+.award-name {
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
 /* For laptop screen of 1506*/
-@media screen and (max-width: 1511px) {
+@media screen and (max-width: 1920px) {
   p {
-    font-size: 20px;
+    font-size: 22px;
   }
   .about_img3 {
     /* margin-top: 95px; */
-    max-width: 55%;
+    max-width: 60%;
   }
   .about-heading {
     text-align: left;
   }
   .services_img3 {
-    max-width: 50%;
+    max-width: 60%;
   }
   .weight_loss_p {
     padding: 15px 0px 0px 0px;
   }
 
   .intro-img-div-container {
-    /* width: 100%; */
+    width: 55%;
   }
 }
 
@@ -369,9 +392,6 @@ p {
     height: 100%;
   }
 
-  .about-heading {
-    text-align: center;
-  }
   p {
     font-size: 17px;
   }
@@ -398,6 +418,7 @@ p {
   }
   .about-heading {
     text-align: center;
+    margin-top: 5px;
   }
   .about_img3 {
     margin-top: 1px;

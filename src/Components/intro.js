@@ -1,3 +1,5 @@
+import { Grid, Typography } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 import { Row } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
@@ -6,28 +8,52 @@ import "../App.css";
 import Awards from "./awards";
 import img1 from "./images/img1.jpg";
 
+const useStyles = makeStyles((theme) => ({
+  container: {
+    backgroundColor: "#2196f3",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "100%",
+  },
+  text: {
+    color: "white",
+    // fontWeight: "bold",
+    textShadow: "2px 2px 2px rgba(0, 0, 0, 0.5)",
+    textAlign: "center",
+    padding: "40px 0px 40px 0px",
+  },
+  img: {
+    maxWidth: "100%",
+    height: "auto",
+  },
+}));
 function Intro() {
-  // eslint-disable-next-line no-unused-vars
+  const classes = useStyles();
+
   return (
     <Container fluid className="intro-main-container">
-      <div className="intro-container">
-        <Row>
-          <Col md={5} className="bg-primary ">
-            <h2 className="text-white text-center text-md-center pt-5 pb-5 ">
-              Pakistan's Leading Bariatric <br /> & <br /> Laparascopic Surgeon
-            </h2>
-          </Col>
-          <Col md={7} className="intro-img-div-container">
-            <img className="img-fluid intro-img" src={img1} alt="1" />
-          </Col>
-        </Row>
-      </div>
+      <Grid container>
+        {/* Left column */}
+        <Grid item xs={12} sm={6}>
+          <div className={classes.container}>
+            <Typography variant="h5" className={classes.text}>
+              Pakistan's Leading Bariatric <br /> & <br /> Laparascopic Surgeon{" "}
+            </Typography>
+          </div>
+        </Grid>
+
+        {/* Right column */}
+        <Grid item xs={12} sm={6}>
+          <img src={img1} className={classes.img} alt="Responsive" />
+        </Grid>
+      </Grid>
 
       <div className="py-5 intro-container-2">
         <Row className="align-items-center">
           <Col md={6} className="intro-text">
             <div className="text-container-intro">
-              <h2 className="text-center text-md-center mb-0">
+              <h2 className="text-center text-md-center mb-0 text-before-award">
                 Professor & Chief of Surgery{" "}
               </h2>
               <p className="shifa-p">

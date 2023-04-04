@@ -45,12 +45,14 @@ const Services = () => {
         </div>{" "}
         <div className="text-md-center text-danger mt-4" ref={ref1}>
           {inView1 && (
-            <CountUp
-              start={0}
-              duration={3}
-              end={503}
-              className="fs-2 "
-            ></CountUp>
+            <h4>
+              <CountUp
+                start={0}
+                duration={3}
+                end={503}
+                className="fs-2 "
+              ></CountUp>
+            </h4>
           )}
           <p className="quantity_text">Bariatric Surgery Procedures</p>
         </div>
@@ -66,7 +68,8 @@ const Services = () => {
               </div>{" "}
               <div className="col-md-6">
                 <div className="service-heading-2">
-                  <h3 className=" text-left">Conventional Surgeries 2</h3> <br />
+                  <h3 className=" text-left">Conventional Surgeries 2</h3>{" "}
+                  <br />
                   <p className=" text-left">
                     Dr. Ghulam Siddiq has a vast experience of conventional
                     operations including surgeries thyroid, breast,

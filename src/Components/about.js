@@ -21,7 +21,9 @@ const About = () => {
               <div className="text">
                 {" "}
                 <br />
-                <h3 className="about-heading ml-2 ">Conventional Surgeries</h3>{" "}
+                <h3 className="about-heading ml-2 tex-left ">
+                  Conventional Surgeries
+                </h3>{" "}
                 <br />
                 <div className="about-para ">
                   <p className=" text-left ">
