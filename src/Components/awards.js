@@ -18,15 +18,15 @@ const Awards = () => {
   return (
     <div className="awards-container">
       {awardData.map(({ text, icon }) => (
-        <Row className="awards-icon-container " key={text}>
-          <Col sm={4} className="icon-container">
-            <FontAwesomeIcon icon={icon} className="icon" />
-          </Col>
-          <Col>
-            {" "}
-            <h3 className="award-name text-left">{text}</h3>
-          </Col>
-        </Row>
+          <Row className="awards-icon-container " key={text}>
+            <Col sm={4} className="icon-container">
+              <FontAwesomeIcon icon={icon} className="icon" />
+            </Col>
+            <Col>
+              {" "}
+              <h3 className="award-name text-left">{text}</h3>
+            </Col>
+          </Row>
       ))}
     </div>
   );

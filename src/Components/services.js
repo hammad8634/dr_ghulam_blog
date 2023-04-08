@@ -14,7 +14,7 @@ const Services = () => {
     <section id="services">
       <>
         <br />
-        <h1 className="services_container">Services</h1> <br />
+        <h1 className="services_container mt-5 mb-4">Services</h1> <br />
       </>
       <div className="">
         <div className="pt-2 pb-0">

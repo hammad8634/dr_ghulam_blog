@@ -15,7 +15,7 @@ const ContactUs = ({ location }) => {
     <section id="contact_us">
       {" "}
       <br />
-      <h1 className="contactUs-heading">Contact</h1>
+      <h1 className="contactUs-heading mb-4">Contact</h1>
       <br />
       <div>
         <Container>
