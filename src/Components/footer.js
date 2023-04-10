@@ -11,7 +11,7 @@ function BlogFooter() {
             <h5>About Us</h5>
             <p className="text-left mt-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-              amet lacus eget sem malesuada pulvinar ut non ex.
+              amet lacus eget sem malesuada pulvinar ut non.
             </p>
           </Col>
           <Col md={3}>
