@@ -203,10 +203,10 @@ div.col-md-5 {
   padding: 1px 1px;
 }
 
-.awards-icon-container:hover {
+/* .awards-icon-container:hover { */
   /* background-color: #e4e1e1; */
   /* background-image: none; */
-}
+/* } */
 
 .award-name:hover {
   font-size: 18px;
