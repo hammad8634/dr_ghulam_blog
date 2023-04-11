@@ -179,19 +179,19 @@ div.col-md-5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: #1b29e6;
+  background-color: #ffd8b1;
   margin-right: 10px;
   animation: pulse 2s infinite;
-  border: 2px solid #fff;
+  border: 2px solid black;
   margin-left: 20px;
 }
 
 .icon {
-  font-size: 18px;
-  color: #ffffff;
+  font-size: 17px;
+  color: black;
 }
 
 .award-name {
@@ -236,7 +236,7 @@ div.col-md-5 {
   background-image: url("award-bg-only.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   /* animation: slide-bg 1s infinite linear; */
 }
 
