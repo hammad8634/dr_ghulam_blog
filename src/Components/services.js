@@ -13,8 +13,7 @@ const Services = () => {
   return (
     <section id="services">
       <>
-        <br />
-        <h1 className="services_container mt-1 mb-4">Services</h1> <br />
+        <h1 className="services_container mt-1 mb-2">Services</h1> <br />
       </>
       <div className="">
         <div className="pt-2 pb-0">
@@ -68,7 +67,7 @@ const Services = () => {
               </div>{" "}
               <div className="col-md-7">
                 <div className="service-heading-2">
-                  <h3 className=" text-left services-2-heading ">
+                  <h3 className=" text-left services-2-heading  ">
                     Conventional Surgeries 2
                   </h3>{" "}
                   <br />

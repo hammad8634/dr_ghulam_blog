@@ -454,7 +454,7 @@ p {
     text-align: center;
   }
 
-  div.col-md-7 {
+  div > div.service-heading-2 {
     padding: 0px 30px;
   }
 }
