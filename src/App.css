@@ -79,7 +79,6 @@ i {
   padding: 1rem;
   color: rgb(223, 232, 245);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-
 }
 
 .right-col {
@@ -204,8 +203,8 @@ div.col-md-5 {
 }
 
 /* .awards-icon-container:hover { */
-  /* background-color: #e4e1e1; */
-  /* background-image: none; */
+/* background-color: #e4e1e1; */
+/* background-image: none; */
 /* } */
 
 .award-name:hover {
@@ -236,7 +235,7 @@ div.col-md-5 {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.6;
-  animation: slide-bg 1s infinite linear;
+  /* animation: slide-bg 1s infinite linear; */
 }
 
 @keyframes slide-bg {
@@ -317,6 +316,21 @@ p {
   text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
+.footer-container {
+  background-color: #F9F8FC;
+}
+.footer-main-container {
+  padding: 20px 50px 10px 50px;
+}
+.footer-icon {
+  margin: 0 16px 0px 16px;
+  /* border: 1px solid black; */
+  padding: 2px;
+  color: black;
+}
+.footer-list {
+  text-decoration: none;
+}
 /* For laptop screen of 1506*/
 @media screen and (max-width: 1920px) {
   p {
@@ -384,7 +398,7 @@ p {
   }
 }
 /* Tablet Responsive CSS */
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 427px) and (max-width: 768px) {
   /* .services_img {
     max-width: 90%;
     padding: 27px 0px 25px 5px;
@@ -438,10 +452,13 @@ p {
   .MuiTypography-h5 {
     font-size: 1.2rem !important;
   }
+  .about-heading {
+    text-align: center;
+  }
 }
 
 /* Large Mobile Responsive CSS */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 427px) {
   .intro-img {
     width: 100%;
     height: auto;

@@ -14,7 +14,7 @@ const About = () => {
         <h1 className="text-center">About</h1> <br />
         <Container>
           <div className="row">
-            <div className="col-md-5 about-main-img">
+            <div className="col-md-5 ">
               <img src={img3} alt="About" className="img-fluid about_img3 " />{" "}
             </div>
             <div className="col-md-7">
