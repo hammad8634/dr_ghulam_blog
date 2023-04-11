@@ -72,6 +72,8 @@ i {
 
 .row {
   margin: 1px;
+  display: flex;
+  align-items: center;
 }
 
 .shifa-p {
@@ -317,7 +319,7 @@ p {
 }
 
 .footer-container {
-  background-color: #F9F8FC;
+  background-color: #f9f8fc;
 }
 .footer-main-container {
   padding: 20px 50px 10px 50px;
@@ -356,53 +358,55 @@ p {
 }
 
 /* For laptop screen of 1440*/
-/* @media screen and (max-width: 1441px) {
+@media screen and (max-width: 1441px) {
   p {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
   .about_img3 {
-    max-width: 55%;
+    max-width: 80%;
   }
-  .about-heading {
-    text-align: left;
-  }
+
   .services_img3 {
-    max-width: 50%;
+    /* max-width: 50%; */
   }
-  .weight_loss_p {
-    padding: 15px 0px 0px 0px;
-  }
-} */
+}
 
 /* For laptop screen of 1k*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
   div.bg-primary {
     padding: 4px 1px;
   }
 
   p {
-    font-size: 20px;
+    font-size: 18px;
   }
   .about_img3 {
-    margin-top: 95px;
-    max-width: 70%;
+    /* margin-top: 95px; */
+    max-width: 90%;
   }
   .about-heading {
     text-align: left;
   }
   .services_img3 {
-    max-width: 80%;
+    max-width: 90%;
+    margin-top: 20px;
+    padding: 0px 2px;
   }
   .weight_loss_p {
     padding: 15px 0px 0px 0px;
   }
 }
+
 /* Tablet Responsive CSS */
-@media screen and (min-width: 427px) and (max-width: 768px) {
+@media screen and (min-width: 427px) and (max-width: 769px) {
   /* .services_img {
     max-width: 90%;
     padding: 27px 0px 25px 5px;
   } */
+
+  .services-2-heading {
+    margin-top: 30px;
+  }
   .icons_text {
     padding-left: 20px;
   }
@@ -442,18 +446,16 @@ p {
   p {
     font-size: 17px;
   }
-  .about-main-img {
-    display: flex;
-    justify-content: center; /* centers the text horizontally */
-    align-items: center; /* centers the text vertically */
-    height: 100vh;
-  }
 
   .MuiTypography-h5 {
     font-size: 1.2rem !important;
   }
   .about-heading {
     text-align: center;
+  }
+
+  div.col-md-7 {
+    padding: 0px 30px;
   }
 }
 
@@ -480,7 +482,7 @@ p {
   }
   .service-heading-2 {
     margin-top: 40px;
-    margin-left: 5;
+    margin-left: 30px;
   }
   .about-para {
     padding: 2px 15px 0px 23px;
@@ -488,11 +490,15 @@ p {
   .quantity_text {
     font-size: 21px;
     font-family: "Roboto";
+    padding: 0px 5px;
   }
   p {
     font-size: 16px;
   }
   .MuiTypography-h5 {
     font-size: 1.1rem !important;
+  }
+  div.col-md-7 {
+    padding: 0px 0px 0px 0px;
   }
 }

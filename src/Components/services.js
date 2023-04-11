@@ -14,13 +14,13 @@ const Services = () => {
     <section id="services">
       <>
         <br />
-        <h1 className="services_container mt-5 mb-4">Services</h1> <br />
+        <h1 className="services_container mt-1 mb-4">Services</h1> <br />
       </>
       <div className="">
         <div className="pt-2 pb-0">
           <Container>
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-7">
                 <div className="pb-2 pl-3">
                   <h4 className="services-headings">Weight Loss Surgery</h4>
                   <p className="weight_loss_p text-left ">
@@ -33,7 +33,7 @@ const Services = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-5">
                 <img
                   src={img5}
                   alt="About"
@@ -59,16 +59,18 @@ const Services = () => {
         <div className="pt-3 ">
           <Container className="mt-2">
             <div className="row ">
-              <div className="col-md-6 ">
+              <div className="col-md-5 ">
                 <img
                   src={img6}
                   alt="About"
                   className="img-fluid services_img3 pt-4"
                 />{" "}
               </div>{" "}
-              <div className="col-md-6">
+              <div className="col-md-7">
                 <div className="service-heading-2">
-                  <h3 className=" text-left">Conventional Surgeries 2</h3>{" "}
+                  <h3 className=" text-left services-2-heading ">
+                    Conventional Surgeries 2
+                  </h3>{" "}
                   <br />
                   <p className=" text-left">
                     Dr. Ghulam Siddiq has a vast experience of conventional

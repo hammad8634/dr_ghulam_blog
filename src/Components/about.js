@@ -15,9 +15,9 @@ const About = () => {
         <Container>
           <div className="row">
             <div className="col-md-5 ">
-              <img src={img3} alt="About" className="img-fluid about_img3 " />{" "}
+              <img src={img3} alt="About" className="about_img3 " />{" "}
             </div>
-            <div className="col-md-7">
+            <div className="col-md-7 second-services-container">
               <div className="text">
                 {" "}
                 <br />
@@ -33,8 +33,7 @@ const About = () => {
                     including whipples operation, surgeries for different types
                     of hernias and cancer surgeries of abdomenal organs, breast
                     and thyroid gland.
-                  </p>
-                  <p className=" text-left">
+                    <br />
                     Dr. Ghulam Siddiq has a vast experience of conventional
                     operations including surgeries thyroid, breast,
                     gastro-intestinal surgeries, pancreaticobilliary surgery
