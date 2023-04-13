@@ -21,11 +21,11 @@ const About = () => {
               <div className="text">
                 {" "}
                 <br />
-                <h3 className="about-heading ml-2 tex-left ">
+                <h3 className="about-heading ml-3 tex-left ">
                   Conventional Surgeries
                 </h3>{" "}
                 <br />
-                <div className="about-para ">
+                <div className="about-para pl-4 ">
                   <p className=" text-left ">
                     Dr. Ghulam Siddiq has a vast experience of conventional
                     operations including surgeries thyroid, breast,

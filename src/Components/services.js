@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <section id="services">
       <>
-        <h1 className="services_container mt-1 mb-2">Services</h1> <br />
+        <h1 className="services_container mt-5 mb-2">Services</h1> <br />
       </>
       <div className="">
         <div className="pt-2 pb-0">
@@ -22,7 +22,7 @@ const Services = () => {
               <div className="col-md-7">
                 <div className="pb-2 pl-3">
                   <h4 className="services-headings">Weight Loss Surgery</h4>
-                  <p className="weight_loss_p text-left ">
+                  <p className="weight_loss_p text-left ml-4 ">
                     Dr. Ghulam Siddiq is among the pioneers of Laparoscopic and
                     Bariatric Surgery in Pakistan. He routinely performs
                     Laparascopic Sleeve Gastrectomy, Roux-en-Y Gastric Bypass &
