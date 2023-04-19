@@ -258,6 +258,9 @@ p {
   align-items: center;
   height: 70%;
 }
+.text-before-award {
+  color: white;
+}
 .award-name,
 .text-before-award {
   text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
