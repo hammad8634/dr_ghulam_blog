@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     height: "100%",
     opacity: 0,
-    transform: "translateY(20px)",
+    transform: "translateY(19px)",
     transition: "opacity 0.5s ease, transform 0.5s ease",
   },
   text: {
