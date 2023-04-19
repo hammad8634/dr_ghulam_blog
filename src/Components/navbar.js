@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "../App.css";
-import logo1 from "./images/logo.svg";
+import logo1 from "./images/logo.png";
 import Intro from "./intro";
 import "./navbar.css";
 
@@ -12,40 +12,37 @@ function Navigation() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="white">
       <Container>
-        <Navbar.Brand href="#home">
-          <div className="navbar-left ml-1">
+        <Navbar.Brand href="#home" className="navbar-container">
+          <div className="navbar-left ml-0">
             <a href="/">
               <img src={logo1} alt="Doctor Kit Icon" className="navbar-icon" />
-            </a>
-            <a href="/" className="name_tag">
-              <div className="navbar-title ">Dr. Ghulam Siddiq</div>{" "}
             </a>
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
-          <Nav className="">
-            <Nav.Link href="#about" className="menus shadow-sm mb-1 mt-1">
+          <Nav className="navbar-menus">
+            <Nav.Link href="#about" className="menus s-sm mb-1 mt-1 ">
               About
             </Nav.Link>
-            <Nav.Link href="#services" className="menus shadow-sm mb-1 mt-1">
+            <Nav.Link href="#services" className="menus s-sm mb-1 mt-1 ">
               Services
             </Nav.Link>
-            <Nav.Link href="#contact_us" className="menus shadow-sm mb-1 mt-1">
+            <Nav.Link href="#contact_us" className="menus s-sm mb-1 mt-1">
               Contact Us
             </Nav.Link>{" "}
           </Nav>
-          <Nav className=" p-2 fw-bold">
+          <Nav className=" p-2 ">
             <Nav.Link
               href="#"
-              className="primary-color-menu shadow-sm mb-1 mt-1"
+              className="primary-color-menu s-sm mb-1 mt-1"
             >
               Book Now
             </Nav.Link>
             <Nav.Link
               href="#"
-              className="primary-color-menu shadow-sm  mb-1 mt-1 "
+              className="primary-color-menu s-sm  mb-1 mt-1 "
             >
               My Appointment
             </Nav.Link>
