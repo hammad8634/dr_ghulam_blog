@@ -101,9 +101,11 @@ const BlogFooter = () => {
           </Row>
         </Container>
         <div className="d-flex justify-content-center">
-          <Row className="mt-3">
-            <Col md={8}>
-              <p className="fs-6">&copy; Shifa, 2023. All rights reserved.</p>
+          <Row className="mt-1">
+            <Col md={8} className="">
+              <p className="fs-6 mt-3 ">
+                &copy; Shifa, 2023. All rights reserved.
+              </p>
             </Col>
             <Col
               md={4}

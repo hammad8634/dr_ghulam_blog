@@ -53,7 +53,7 @@ const Services = () => {
               ></CountUp>
             </h4>
           )}
-          <p className="quantity_text">Bariatric Surgery Procedures</p>
+          <p className="quantity_text pb-4">Bariatric Surgery Procedures</p>
         </div>
         <div className="">
           <Container className="mt-2">
@@ -86,7 +86,7 @@ const Services = () => {
         </div>{" "}
         <div className="text-md-center text-primary pt-4" ref={ref2}>
           {inView2 && (
-            <h4 className="quantity_values">
+            <h4 className="quantity_values mb-3">
               <CountUp
                 start={0}
                 duration={2}

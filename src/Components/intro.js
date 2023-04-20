@@ -10,18 +10,18 @@ import img1 from "./images/img1.jpg";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    backgroundColor: "#2196f3",
+    backgroundColor: "#FFDADA",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     height: "100%",
   },
   text: {
-    color: "white",
+    color: "black",
     // fontWeight: "bold",
-    textShadow: "2px 2px 2px rgba(0, 0, 0, 0.5)",
+    textShadow: "1px 1px 1px rgba(0, 0, 0, 0.2)",
     textAlign: "center",
-    padding: "40px 0px 40px 0px",
+    padding: "70px 0px 70px 0px",
   },
   img: {
     maxWidth: "100%",
