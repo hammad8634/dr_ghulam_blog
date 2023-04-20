@@ -255,11 +255,8 @@ p {
 }
 
 .animate-text {
-  animation-name: slide-in;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
   opacity: 0;
+  /* animation: slide-up 1s ease-out forwards; */
 }
 
 @keyframes slide-in {
@@ -272,9 +269,14 @@ p {
   }
 }
 
+.service-1,
+.services-2,
 .awards-container {
   opacity: 0;
   transform: translateY(50%);
+  /* animation: slide-up 1s ease-out forwards; */
+}
+.in-view {
   animation: slide-up 1s ease-out forwards;
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
@@ -9,6 +9,23 @@ import img6 from "./images/img6.png";
 const Services = () => {
   const { ref: ref1, inView: inView1 } = useInView({ threshold: 0.2 });
   const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.2 });
+  const { ref: refSer1, inView: inViewSer1 } = useInView({ threshold: 0.2 });
+  const { ref: refSer2, inView: inViewSer2 } = useInView({ threshold: 0.2 });
+
+  const [shouldAnimateService1, setShouldAnimateService1] = useState(false);
+  const [shouldAnimateService2, setShouldAnimateService2] = useState(false);
+
+  useEffect(() => {
+    if (inViewSer1) {
+      setShouldAnimateService1(true);
+    }
+  }, [inViewSer1]);
+
+  useEffect(() => {
+    if (inViewSer2) {
+      setShouldAnimateService2(true);
+    }
+  }, [inViewSer2]);
 
   return (
     <section id="services">
@@ -19,7 +36,12 @@ const Services = () => {
         <div className="pt-1 pb-0">
           <Container>
             <div className="row">
-              <div className="col-md-7">
+              <div
+                className={`col-md-7 service-1 ${
+                  shouldAnimateService1 ? "in-view" : ""
+                }`}
+                ref={refSer1}
+              >
                 <div className="pb-2 pl-3">
                   <h4 className="services-headings">Weight Loss Surgery</h4>
                   <p className="weight_loss_p text-left ml-4 ">
@@ -65,7 +87,12 @@ const Services = () => {
                   className="img-fluid services_img3 pt-4"
                 />{" "}
               </div>{" "}
-              <div className="col-md-7">
+              <div
+                className={`col-md-7 services-2 ${
+                  shouldAnimateService2 ? "in-view" : ""
+                }`}
+                ref={refSer2}
+              >
                 <div className="service-heading-2">
                   <h3 className=" text-left services-2-heading  ">
                     Conventional Surgeries 2
