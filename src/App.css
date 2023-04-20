@@ -184,7 +184,7 @@ div.col-md-5 {
   /* background-image: url(award-bg-only.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #FFDADA;
+  background-color: #ffdada;
 }
 @keyframes slide-bg {
   0% {
@@ -264,7 +264,7 @@ p {
 
 @keyframes slide-in {
   from {
-    transform: translateZ(-1000px) rotateX(60deg) scale(0.3);
+    transform: translateZ(-1000px) rotateX(45deg) scale(0.1);
   }
   to {
     transform: translateZ(0) rotateX(0deg) scale(1);
