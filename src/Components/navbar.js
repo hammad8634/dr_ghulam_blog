@@ -13,7 +13,7 @@ function Navigation() {
     <Navbar collapseOnSelect expand="lg" bg="light" variant="white">
       <Container>
         <Navbar.Brand href="#home" className="navbar-container">
-          <div className="navbar-left ml-0">
+          <div className="navbar-left ml-2">
             <a href="/">
               <img src={logo1} alt="Doctor Kit Icon" className="navbar-icon" />
             </a>

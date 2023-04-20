@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Row } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -15,9 +15,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     height: "100%",
-    opacity: 0,
-    transform: "translateY(19px)",
-    transition: "opacity 0.5s ease, transform 0.5s ease",
   },
   text: {
     color: "white",
@@ -33,11 +30,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 function Intro() {
   const classes = useStyles();
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    setIsVisible(false);
-  }, []);
 
   return (
     <>
@@ -46,10 +38,13 @@ function Intro() {
         <Grid container>
           {/* Left column */}
           <Grid item xs={12} sm={6}>
-            <div className={isVisible ? classes.container : ""}>
-              <Typography variant="h5" className={classes.text}>
+            <div className={classes.container}>
+              <Typography
+                variant="h5"
+                className={`${classes.text} animate-text`}
+              >
                 Pakistan's Leading Bariatric <br /> & <br /> Laparascopic
-                Surgeon{" "}
+                Surgeon
               </Typography>
             </div>
           </Grid>

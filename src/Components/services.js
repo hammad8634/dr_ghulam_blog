@@ -13,10 +13,10 @@ const Services = () => {
   return (
     <section id="services">
       <>
-        <h1 className="services_container mt-5 mb-2">Services</h1> <br />
+        <h1 className="services_container mt-2 pb-2 ">Services</h1> <br />
       </>
       <div className="">
-        <div className="pt-2 pb-0">
+        <div className="pt-1 pb-0">
           <Container>
             <div className="row">
               <div className="col-md-7">
@@ -36,7 +36,7 @@ const Services = () => {
                 <img
                   src={img5}
                   alt="About"
-                  className="img-fluid services_img3 pt-3"
+                  className="img-fluid services_img3 "
                 />{" "}
               </div>
             </div>
@@ -55,7 +55,7 @@ const Services = () => {
           )}
           <p className="quantity_text">Bariatric Surgery Procedures</p>
         </div>
-        <div className="pt-3 ">
+        <div className="">
           <Container className="mt-2">
             <div className="row ">
               <div className="col-md-5 ">

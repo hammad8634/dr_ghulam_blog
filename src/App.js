@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import About from "./Components/about";
 import ContactUs from "./Components/contactus";
@@ -13,6 +14,7 @@ const App = () => {
     <div className="App">
       <BlogPage />
       <About />
+      <br/>
       <Services />
       <ContactUs location="33.67555442868343, 73.06721081039363" />
       <Faq />
