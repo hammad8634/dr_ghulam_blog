@@ -59,7 +59,7 @@ function Intro() {
                 ref={refIntroText}
               >
                 Pakistan's Leading Bariatric <br /> & <br /> Laparascopic
-                Surgeon
+                Surgeon...
               </Typography>
             </div>
           </Grid>
